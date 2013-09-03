@@ -1,0 +1,61 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Session Setting",
+      "warning_code": 29,
+      "fingerprint": "715ad9c0d76f57a6a657192574d528b620176a80fec969e2f63c88eacab0b984",
+      "message": "Session secret should not be included in version control",
+      "file": "config/initializers/secret_token.rb",
+      "line": 12,
+      "link": "http://brakemanscanner.org/docs/warning_types/session_setting/",
+      "code": null,
+      "render_path": null,
+      "location": null,
+      "user_input": null,
+      "confidence": "High",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "17f257e0dcddecec9493c99b27156ae4f5cbad1dbfc13f58f668e942f0a0d47b",
+      "message": "Unescaped parameter value",
+      "file": "app/views/articles/index.html.erb",
+      "line": 34,
+      "link": "http://brakemanscanner.org/docs/warning_types/cross_site_scripting/",
+      "code": "params[:asdf]",
+      "render_path": [
+        "ArticlesController#index"
+      ],
+      "location": {
+        "type": "template",
+        "template": "articles/index (ArticlesController#index)"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "89c012d1ab203b2279e791cb79f9984669c49b7c660f679ae40cebb34a6c4ae8",
+      "message": "Unescaped parameter value",
+      "file": "app/views/articles/index.html.erb",
+      "line": 36,
+      "link": "http://brakemanscanner.org/docs/warning_types/cross_site_scripting/",
+      "code": "params[:lol]",
+      "render_path": [
+        "ArticlesController#index"
+      ],
+      "location": {
+        "type": "template",
+        "template": "articles/index (ArticlesController#index)"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": ""
+    }
+  ],
+  "updated": "2013-08-27 06:28:37 -1000",
+  "brakeman_version": "2.1.1"
+}
