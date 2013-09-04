@@ -7,7 +7,7 @@
     :default_src => "self",
     :script_src => 'self none',
     :report_uri => '//example.com/uri-directive',
-    :disable_chrome_extension => true, 
+    :disable_chrome_extension => true,
     :disable_fill_missing => true
   }
 end

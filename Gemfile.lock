@@ -3,6 +3,7 @@ PATH
   specs:
     secure_headers (1.0.0)
       brwsr (>= 1.1.1)
+      rack
 
 GEM
   remote: https://rubygems.org/
