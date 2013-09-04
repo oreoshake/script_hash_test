@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'secure_headers', :path => '../secureheaders'
 gem 'mustache-rails', :require => 'mustache/railtie'
-
+gem 'guard-rake'
+gem 'guard-brakeman'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
