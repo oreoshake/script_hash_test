@@ -8,6 +8,6 @@ Bundler.require(:default, Rails.env)
 
 module ScriptHash
   class Application < Rails::Application
-    # config.middleware.use SecureHeaders::ScriptHash
+    config.action_dispatch.default_headers.clear
   end
 end
