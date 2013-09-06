@@ -1,8 +1,3 @@
-<script>
-console.log("I'm an inline multi-line thing!!!");
-console.log("I'm really an inline multi-line thing!!!");
-</script>
-
 <%= form_for(@article) do |f| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -35,5 +30,3 @@ console.log("I'm really an inline multi-line thing!!!");
     <%= f.submit %>
   </div>
 <% end %>
-<script>console.log("I'm inline")</script>
-<script>console.log("Me too!")</script>
