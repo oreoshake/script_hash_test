@@ -3,9 +3,10 @@
   config.x_frame_options = 'DENY'
   config.x_content_type_options = "nosniff"
   config.x_xss_protection = {:value => 1, :mode => 'block'}
+  # config.csp = false
   config.csp = {
     :default_src => "self",
-    :script_src => 'self none',
+    :script_src => 'self',
     :report_uri => '//example.com/uri-directive',
     :disable_chrome_extension => true,
     :disable_fill_missing => true

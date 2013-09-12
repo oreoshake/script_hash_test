@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require sha256
+//= require enc-base64
 //= require_tree .
+
+$(document).ready(function() {
+  console.log($('script'))
+  $.each($('script'), function(index, x) { console.log(x); console.log(CryptoJS.SHA256(x.innerHTML).toString(CryptoJS.enc.Base64));});
+})
