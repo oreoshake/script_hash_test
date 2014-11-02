@@ -1,10 +1,15 @@
 ---
 app/views/articles/_form.html.erb:
-- q7vWWNA/q+JKgLk6dsHoicMB4yUvFZdhedorS6cR8lg=
-- /L1G5RlAG0r8FKCgZL/QdzFNYA7qJf7EMW1Zzfpo5ZA=
-- UciGYnO8+ceanxsqDylv4qDwuyVvapo7KA8/PxWhMZ4=
+- sha256-q7vWWNA/q+JKgLk6dsHoicMB4yUvFZdhedorS6cR8lg=
+- sha256-/L1G5RlAG0r8FKCgZL/QdzFNYA7qJf7EMW1Zzfpo5ZA=
+- sha256-UciGYnO8+ceanxsqDylv4qDwuyVvapo7KA8/PxWhMZ4=
+app/views/articles/index.html.erb:
+- sha256-xQR1L1V6IpUMqleN1dUBop6tedEF7adzGxU8GCPNtDQ=
+- sha256-oct7ByG035osD79N4xdz+gvu9Gf8hKOphT/12hU7EFQ=
+app/views/layouts/application.html.erb:
+- sha256-l8OLjZqYRnKilpdE0VosRMvhdYArjXT4NZaK2p7QVvs=
 app/templates/articles/edit.mustache:
-- +7mij1/uCwtCQRWrof2NmOln5qX+5WdVwTLMpi8nuoA=
-- Ny4TRIhhFpnYnSeKC274P6bfAz4TOkezLabavIAU4dA=
-- I5e58Gqbu4WpO9dck18QxO7aYOHKrELIi70it4jIPi0=
-- Po4LMynwnAJHxiTp3DQaQ3YDBj3paN/xrDoKl4OyxY4=
+- sha256-+7mij1/uCwtCQRWrof2NmOln5qX+5WdVwTLMpi8nuoA=
+- sha256-Ny4TRIhhFpnYnSeKC274P6bfAz4TOkezLabavIAU4dA=
+- sha256-I5e58Gqbu4WpO9dck18QxO7aYOHKrELIi70it4jIPi0=
+- sha256-Po4LMynwnAJHxiTp3DQaQ3YDBj3paN/xrDoKl4OyxY4=
