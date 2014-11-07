@@ -28,7 +28,14 @@
     <% end %>
   </tbody>
 </table>
-<script>alert("should not happen!")</script>
 <br>
-<script>console.log("in view")</script>
+<%= hashed_javascript_tag do %>
+console.log("hashed!?")
+<% end %>
+<%= nonced_javascript_tag do %>
+console.log("nonced!")
+<% end %>
+<%= ENV["RAILS_ENV"] %>
+<%= @content_security_policy_nonce %>
+
 <%= link_to 'New Article', new_article_path %>

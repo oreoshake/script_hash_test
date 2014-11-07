@@ -7,9 +7,8 @@
   config.csp = {
     :enforce => true,
     :default_src => "self",
-    :script_src => 'self',
+    :script_src => 'self nonce',
     :script_hash_middleware => true,
-    :script_hashes => ['sha1-abc12345'],
     :report_uri => '//example.com/uri-directive',
     :disable_chrome_extension => true,
     :disable_fill_missing => true

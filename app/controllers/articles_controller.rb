@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    render :mustache => 'edit'
   end
 
   # POST /articles
