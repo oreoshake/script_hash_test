@@ -38,6 +38,7 @@ console.log("hashed automatically!")
 <%= nonced_javascript_tag do %>
 console.log("nonced!")
 <% end %>
+<%= nonced_javascript_tag 'console.log("nonced without a block!")' %>
 <%= ENV["RAILS_ENV"] %>
 <%= @content_security_policy_nonce %>
 
