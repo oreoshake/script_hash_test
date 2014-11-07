@@ -29,8 +29,11 @@
   </tbody>
 </table>
 <br>
+<script>
+console.log("Hashed manually")
+</script>
 <%= hashed_javascript_tag do %>
-console.log("hashed!?")
+console.log("hashed automatically!")
 <% end %>
 <%= nonced_javascript_tag do %>
 console.log("nonced!")
