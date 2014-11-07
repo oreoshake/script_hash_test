@@ -6,6 +6,8 @@ app/views/articles/_form.html.erb:
 app/views/articles/index.html.erb:
 - sha256-DZ3NmGX3tMfdQaxm/q4EOyMiHhsIRJ/veXGlE6/yZzE=
 - sha256-RRGPJcTnaNerYnL+cQ7W1j3MmXcfctYEQsiS0rxtsog=
+app/views/layouts/application.html.erb:
+- sha256-GqciIz7lqDMORmLzpkKYeR5vdKLlUnDPTePxdzFqDos=
 app/templates/articles/edit.mustache:
 - sha256-+7mij1/uCwtCQRWrof2NmOln5qX+5WdVwTLMpi8nuoA=
 - sha256-Ny4TRIhhFpnYnSeKC274P6bfAz4TOkezLabavIAU4dA=

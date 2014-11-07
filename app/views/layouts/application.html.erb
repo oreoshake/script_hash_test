@@ -4,6 +4,9 @@
   <title>ScriptHash</title>
 </head>
 <body>
+<%= hashed_javascript_tag(raise_error_on_unrecognized_hash = true) do %>
+console.log("hashed automatically in layout!!!")
+<% end %>
 <%= debug request.env %>
 <%= yield %>
 
