@@ -32,7 +32,7 @@
 <script>
 console.log("Hashed manually")
 </script>
-<%= hashed_javascript_tag do %>
+<%= hashed_javascript_tag(raise_error_on_unrecognized_hash = true) do %>
 console.log("hashed automatically!")
 <% end %>
 <%= nonced_javascript_tag do %>
@@ -42,3 +42,8 @@ console.log("nonced!")
 <%= @content_security_policy_nonce %>
 
 <%= link_to 'New Article', new_article_path %>
+<style nonce="<%=@content_security_policy_nonce%>">
+body {
+  text-decoration: bold;
+}
+</style>
