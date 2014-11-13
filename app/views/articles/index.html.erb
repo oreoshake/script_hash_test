@@ -9,7 +9,7 @@ console.log("hashed automatically!")
 <% end %>
 
 <!-- script nonce -->
-<script nonce="<%= content_security_policy_nonce %>">
+<script nonce="<%= @content_security_policy_nonce %>">
 console.log("manually nonced")
 </script>
 
@@ -23,7 +23,7 @@ console.log("nonced!")
 <%= @content_security_policy_nonce %>
 
 <!-- style nonce -->
-<style nonce="<%=@content_security_policy_nonce%>">
+<style nonce="<%= @content_security_policy_nonce%>">
 body {
   text-decoration: bold;
 }
