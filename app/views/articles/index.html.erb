@@ -1,50 +1,34 @@
-<h1>Listing articles</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th>Published on</th>
-      <th>Tags</th>
-      <th>Properties</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-<%= hashed_javascript_tag "console.log('hashed without a block')", true %>
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.name %></td>
-        <td><%= article.content %></td>
-        <td><%= article.published_on %></td>
-        <td><%= article.tags %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
+<!-- Hashes -->
 <script>
 console.log("Hashed manually")
+console.log("")
 </script>
+
 <%= hashed_javascript_tag(raise_error_on_unrecognized_hash = true) do %>
 console.log("hashed automatically!")
 <% end %>
+
+<!-- script nonce -->
+<script nonce="<%= content_security_policy_nonce %>">
+console.log("manually nonced")
+</script>
+
 <%= nonced_javascript_tag do %>
 console.log("nonced!")
 <% end %>
+
 <%= nonced_javascript_tag 'console.log("nonced without a block!")' %>
+
 <%= ENV["RAILS_ENV"] %>
 <%= @content_security_policy_nonce %>
 
-<%= link_to 'New Article', new_article_path %>
+<!-- style nonce -->
 <style nonce="<%=@content_security_policy_nonce%>">
 body {
   text-decoration: bold;
 }
 </style>
+<%= nonced_style_tag 'text-decoration: underline;' %>
+<%= nonced_style_tag do %>
+  text-decoration: lol;
+<% end %>
